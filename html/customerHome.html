@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customer Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <body>
+
+        <div>
+            <div class="customer-container">
+                <div class="customerContainer">
+                    <ul>
+                        <li class="customer-list" ng-repeat="customer in customers">
+                            <div class="customerInfo">
+                                <h2>{{customer.name}}</h2>
+                                <p class="cityName">{{customer.city}}</p>
+                            </div>
+                            <div class="delete-customer" ng-show="deleteCust">
+                                <button ng-click="rmvCust(customer)">Remove</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="input-delete-tab">
+                    <div class="input-btn-tab">
+                        <button class="cust-add-btn" ng-click="addCustTab=true; delCustTab=false">New Customer</button>
+                        <button class="cust-delete-btn" ng-click="deleteCust=true; cancelbtn=true; addCustTab=false; closeTab=true">Delete Customer</button>
+                    </div>
+
+                    <div class="input-tab" ng-show="addCustTab">
+                        <div class="input-field">
+                            <input type="text" ng-model="custName" placeholder="Enter name" required>
+                            <input type="text" ng-model="custCity" placeholder="CityName" required>
+                            <div class="addItems">
+                                <input type="text" placeholder="Add Item Name" ng-model="custItems">
+                                <input type="text" placeholder="Item Price" ng-model="itemPrice">
+                                <button ng-click="addItem(); showItems=true" ng-click="enabSave = true" class="btn-add">Add Item</button>
+                            </div>
+                        </div>
+                        <!-- <div class="selectedItems" ng-show="showItems">
+                            <h3>Selected Items</h3>
+                            <ul>
+                                <li ng-repeat="item in items">
+                                    {{item.name}} : {{item.price | currency:"₹ " }}
+                                </li>
+                            </ul>
+                        </div> -->
+                        <button class="btn-save" ng-click="saveCustomer()">Save</button>
+                        <button ng-click="addCustTab=false">Cancel</button>
+                    </div>
+
+                    <div class="delete-tab" ng-show="closeTab">
+                        <button ng-click="closeTab=false; deleteCust=false">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

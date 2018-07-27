@@ -1,0 +1,67 @@
+{
+  "data" : {
+    "-LE3C59N-RzNlKij7CSx" : {
+      "city" : "Jaypur",
+      "custId" : "-LE3C59N-RzNlKij7CSw",
+      "name" : "Kishan",
+      "purchedItems" : [ {
+        "name" : "Tennis Ball",
+        "price" : 60
+      }, {
+        "name" : "Cricket Bat",
+        "price" : 346
+      } ]
+    },
+    "-LE3FPv15NKbeeS1ZRnF" : {
+      "city" : "Goa",
+      "custId" : "-LE3FPv15NKbeeS1ZRnE",
+      "name" : "Oz",
+      "purchedItems" : [ {
+        "name" : "motoG5",
+        "price" : 11000
+      }, {
+        "name" : "Lenovo Elitebook",
+        "price" : 55000
+      } ]
+    },
+    "-LE3Ft5gd1QvHDjnwmFr" : {
+      "city" : "Andheri",
+      "custId" : "-LE3Ft5gd1QvHDjnwmFq",
+      "name" : "Doa",
+      "purchedItems" : [ {
+        "name" : "yohut",
+        "price" : 89
+      } ]
+    },
+    "-LE3JitDBuBQwzKoJ6nc" : {
+      "city" : "King's Landing",
+      "custId" : "-LE3JitDBuBQwzKoJ6nb",
+      "name" : "Sercy",
+      "purchedItems" : [ {
+        "name" : "Wine",
+        "price" : 670
+      } ]
+    },
+    "-LE3wEgtR4N9D1d_mAWy" : {
+      "city" : "Forge",
+      "custId" : "-LE3wEgtR4N9D1d_mAWx",
+      "name" : "Dallorus",
+      "purchedItems" : [ {
+        "name" : "ehbwj",
+        "price" : 122
+      } ]
+    },
+    "-LEXqLyPW0K-0QzNU549" : {
+      "city" : "Cali",
+      "custId" : "-LEXqLyPW0K-0QzNU548",
+      "name" : "John",
+      "purchedItems" : [ {
+        "name" : "doormate",
+        "price" : 45
+      }, {
+        "name" : "Tourch",
+        "price" : 23
+      } ]
+    }
+  }
+}

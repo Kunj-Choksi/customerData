@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div>
+        <div class="containerlist" >
+            <ul>
+                <li class="detailed-list" ng-repeat="customer in customers">
+                    <h3>{{customer.name}}</h3>
+                    <table>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr ng-repeat="item in customer.purchedItems">
+                            <td>{{item.name}}</td>
+                            <td>{{item.price | currency:"₹ "}}</td>
+                        </tr>
+                        <tr >
+                            <td><b>Total</b></td>
+                            <td> <span style="color: yellowgreen">{{ getTotal(customer) | currency:"₹ " }}</span></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

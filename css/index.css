@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+    font-family: Montserrat;
+}
+h2{
+    font: 600 30px Montserrat, 'Arial';
+}
+h3{
+    font: 600 20px Montserrat, 'Arial';
+}
+input[type='text']{
+    display: block;
+    margin: 10px 0px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    padding: 10px;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    background-color: teal;
+    margin-bottom: 10px;
+}
+button:disabled{
+    background-color: rgb(166, 179, 255);
+}
+.containerlist table{
+    border: 1px solid;
+    margin-bottom: 20px;
+    width: 230px;
+}
+.containerlist table th{
+    font: 600 20px Montserrat;
+    border: 1px solid;
+    padding: 10px;  
+}
+.containerlist table tr td{
+    border: 1px solid;
+    padding: 10px;
+}
+header{
+    background-color: #02203c; 
+}
+
+header nav .navigation{
+    display: flex;
+    padding-left: 50px;
+}
+header nav .navigation li{
+    padding: 15px;
+    background-color: teal;
+}
+header nav .navigation li a{
+    color: #fff;
+}
+.customer-container{
+    display: flex;
+    padding: 50px 30px;
+    justify-content: space-between;
+}
+.container .customerContainer{
+    border-right: 2px solid #bdbdbd;
+    width: 70%;
+    margin-right: 20px;
+}
+
+.customer-list .customerInfo{
+    margin:0px 30px 5px 0px;
+    border: 2px solid #4376f8;
+    padding: 5px 10px;
+}
+.delete-customer{
+    text-align: left;
+}
+.delete-customer button{
+    color: #ffffff;
+    background-color: #bd1e02;
+    padding: 8px;
+}
+.customer-list{
+    display: inline-block
+}
+.customerInfo h2{
+    text-align: center;
+    border-bottom: 3px solid #002480;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.selectedItems{
+    margin-bottom: 20px;
+}
+.selectedItems ul li{
+    font: italic 400 15px 'Arial';
+}
+.container{
+    padding: 50px;
+}
+.containerlist ul li{
+    margin-right: 20px;
+    display: inline-block;
+}
+.input-btn-tab{
+    display: flex
+}
+.input-delete-tab{
+    width: 30%;
+}
+.btn-add{
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+.cust-add-btn{
+    margin-right: 10px;
+}
+.cust-add-btn:hover{
+    background-color: rgb(0, 75, 75);
+}
+.cust-delete-btn{
+    color: #ffffff;
+    background-color: #bd1e02;
+}
+.cust-delete-btn:hover{
+    background-color: #8c1601
+}
+
+/* Animate-Css */
+
+.container.ng-enter {
+    transition:0.5s linear all;
+    opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.container.ng-enter.ng-enter-active {
+    opacity:1;
+}
+
+.input-field.ng-enter {
+    transition:0.5s linear all;
+    opacity:0;
+}
+
+.input-field.ng-enter.ng-enter-active {
+    opacity:1;
+}
+
+/* Curtain Animation */
+
+.customer-list.ng-enter {
+    transition: 1s linear all;
+    opacity: 0;
+}
+.customer-list.ng-enter-stagger {
+    transition-delay: 0.1s;
+    transition-duration: 0s;
+}
+.customer-list.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.detailed-list.ng-enter {
+    transition: 1s linear all;
+    opacity: 0;
+}
+.detailed-list.ng-enter-stagger {
+    transition-delay: 0.1s;
+    transition-duration: 0s;
+}
+.detailed-list.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+/*       ngLeave       */
+
+.customer-list.ng-leave{
+    transition: 0.2s linear all;
+    opacity: 1;
+    transform: translateY(0);
+}
+.customer-list.ng-leave.ng-leave-active{
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+.delete-customer.ng-leave{
+    transition: 0.2s linear all;
+    opacity: 1;
+    transform: translateY(0);
+}
+.delete-customer.ng-leave.ng-leave-active{
+    opacity: 0;
+    transform: translateY(-100%)
+}

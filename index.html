@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/globle-reset.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <div class="navbar" ng-include="'html/navigation.html'"></div>
+
+    <div class="container" ui-view>
+        
+    </div>
+
+    <script src="js/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+    <script src="js/ui-router.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/customerHome.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAH_6qYOuNImxy4R-Dag9iGWYWwIJv6BHE",
+            authDomain: "customerdata-df413.firebaseapp.com",
+            databaseURL: "https://customerdata-df413.firebaseio.com",
+            projectId: "customerdata-df413",
+            storageBucket: "",
+            messagingSenderId: "516494473092"
+        };
+        firebase.initializeApp(config);
+    </script>
+</body>
+
+</html>
